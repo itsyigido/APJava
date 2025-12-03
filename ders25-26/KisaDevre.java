@@ -3,7 +3,8 @@ public class KisaDevre {
             String kullaniciAdi = null;
             if(kullaniciAdi != null && kullaniciAdi.equals("admin")) {
                 System.out.println("Admin Girişi Yapıldı");
-            } else {}
+            } else {
                 System.out.println("Güvenli Kontrol: Admin Girişi yapmadı veya Kullanıcı adı eksik");
             }
         }
+    }

@@ -5,7 +5,7 @@ public class SinemaBilet {
         boolean ogrenciMi = true;
         boolean ucDFilmMi = false;
         
-        double biletFiyati = 0.0;
+        double biletFiyati = 50.0;
 
         if (yas < 10) {
             biletFiyati = 30.0; 
@@ -15,7 +15,7 @@ public class SinemaBilet {
                 biletFiyati = 40.0;  
                 System.out.println("Öğrenci olduğunuz için biletinize indirim uygulanmıştır.");
             } else {
-                biletFiyati = 50.0;  
+               // biletFiyati = 50.0;  
                 System.out.println("Tam bilet ücreti uygulanmıştır.");
             }
         }
