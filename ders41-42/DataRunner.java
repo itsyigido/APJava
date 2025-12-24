@@ -5,7 +5,7 @@ public class DataRunner {
     System.out.println("Ilk olarak cinsiyetiniz nedir?");
     String kullaniciverisi1 = "Erkek";
     if (kullaniciverisi1 == "Erkek") {
-        datalaritopla.cinsiyetstring(kullaniciverisi1);
+        datalaritopla.cinsiyet(kullaniciverisi1);
         
     }
 

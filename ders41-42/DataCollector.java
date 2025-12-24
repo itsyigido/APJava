@@ -1,19 +1,16 @@
-import javax.swing.text.StyledEditorKit.BoldAction;
 
 public class DataCollector {
     public String cinsiyet(String veri1) {
-        boolean cinsiyetdata = true;
+        String cinsiyetdata = veri1;
         String cinsiyetstring = "";
         
-        if (cinsiyetdata == true) {
+        if (cinsiyetdata.equals("Erkek")) {
             cinsiyetstring = "Erkek";
         } else {
             cinsiyetstring = "Kadın";
         }
         return cinsiyetstring;
-        Cls_Options.cinsiyet = "test";
     }
-    
         public String yas(String veri2) {
         int yasdata = 0;
         boolean argolucevaplar;

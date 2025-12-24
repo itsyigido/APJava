@@ -8,8 +8,5 @@ public class MagpieRunner {
         
         System.out.println("Sen: " + userStatement);
         System.out.println("Magpie: " + magpieBot.getResponse(userStatement));
-        System.out.println("Magpie: " + magpieBot.getResponse("Dostum nasılsın"));
-        System.out.println("Magpie sinirli hali: " + magpieBot.sinirliMagpie());
-
     }
 }
