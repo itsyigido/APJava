@@ -51,9 +51,9 @@ public class AracBilgileri {
         this.ikinciElMi = false;
       }
     // ==== METOTLAR (Methods / Behaviors) ====
-
+    public int aracNo = 1;
     public void bilgileriYaz(){
-        System.out.println("******** Araba Bilgileri ********" );
+        System.out.println("******** " + this.aracNo + " Numaralı Arabanın Bilgileri ********" );
         System.out.println("Marka: \t\t\t" + this.marka + "\n" + "Model: \t\t\t" + this.model + "\n" + "Model Yılı: \t\t" + this.yılı + 
         "\n" + "Fiyat: \t\t\t" + this.fiyat + "$" +"\n" + "İkinci El mi: \t\t" + (this.ikinciElMi == true ? "Evet" : "Hayır"));
     }
@@ -66,11 +66,27 @@ public class AracBilgileri {
       return this.marka;
     }
     
+    public String modelGetir(){
+      return this.model;
+    }
+
+    public int yılGetir(){
+      return this.yılı; // Çift tırnak ile sisteme çaktırmadan stringe çevirdim
+    }
+
     public AracBilgileri(String marka){
       this.marka = marka;
       this.model = "Bilinmiyor";
       this.yılı = 0;
       this.fiyat = 0.0;
       this.ikinciElMi = false;
+    }
+
+    public boolean AracLuksMu(){
+      if(this.fiyat > 500.000){
+        return true;
+      } else {
+        return false;
+      }
     }
 }
